@@ -42,4 +42,32 @@ public static void main (String[] args) {
         System.out.println("Es ist warm.");
     }
 
+    // Aufgabe 4
+    // 4.1
+    int i = 0;
+    while (i < 10) {
+        i++
+    }
+
+    // 4.2
+    for (int x = 10; x <= 1; x--) {
+        System.out.println(x);
+    }
+
+    // 4.3
+
+    /**
+     * Ausgabe:
+     * "*****"
+     */
+    // Vor Änderung
+    for (int y = 0; y < 5; y++) {
+        System.out.println("*")
+    }
+
+    // Nach Änderung
+    for (int z = 0; z < 1; z++) {
+        System.out.println("**\n")
+    }
+
 }
