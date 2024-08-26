@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
-public static void main (String[] args) {
+/**
+ * HelloWorld
+ */
+public class HelloWorld {
+    public static void main (String[] args) {
 
     // Aufgabe 1
     System.out.println("Hello world!");
@@ -21,6 +25,7 @@ public static void main (String[] args) {
 
     Scanner scanner = new Scanner(System.in);
     int res = scanner.nextInt();
+    scanner.close();
 
     if (res > 10) System.out.println("Zahl größer als 10!");
     if (res < 10) System.out.println("Zahl kleiner oder gleich 10!");
@@ -46,7 +51,7 @@ public static void main (String[] args) {
     // 4.1
     int i = 0;
     while (i < 10) {
-        i++
+        i++;
     }
 
     // 4.2
@@ -62,12 +67,13 @@ public static void main (String[] args) {
      */
     // Vor Änderung
     for (int y = 0; y < 5; y++) {
-        System.out.println("*")
+        System.out.println("*");
     }
 
     // Nach Änderung
     for (int z = 0; z < 1; z++) {
-        System.out.println("**\n")
+        System.out.println("**\n");
     }
 
+}
 }
