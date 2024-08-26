@@ -75,5 +75,13 @@ public class HelloWorld {
         System.out.println("**\n");
     }
 
+    // Aufgabe 5 (Zusatz)
+    int n = 10;
+    int produkt = 1;
+    while(n > 0) {
+        produkt *= n;
+        n--;
+    }
+
 }
 }
