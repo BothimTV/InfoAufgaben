@@ -14,8 +14,9 @@ public class Sort {
                     änderung = true;
                 }
             }
-            if (!änderung)
+            if (!änderung) {
                 läuft = false;
+            }
         }
 
         for (int i = 0; i < arr.length; i++) {
