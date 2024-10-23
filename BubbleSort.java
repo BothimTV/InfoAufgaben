@@ -4,9 +4,10 @@ public class BubbleSort {
         int[] arr = { 4, 39, 4, 0, 21, 8, 2 };
         boolean läuft = true;
 
+        int offset = 0;
         while (läuft) {
             boolean änderung = false;
-            for (int i = 0; i < arr.length - 1; i++) {
+            for (int i = 0; i < arr.length - 1 - offset; i++) {
                 if (arr[i] > arr[i + 1]) {
                     int temp = arr[i];
                     arr[i] = arr[i + 1];
@@ -14,6 +15,7 @@ public class BubbleSort {
                     änderung = true;
                 }
             }
+            offset++;
             if (!änderung) {
                 läuft = false;
             }
