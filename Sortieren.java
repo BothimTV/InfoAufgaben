@@ -1,34 +1,28 @@
 
-public class Sortieren
-{ 
+public class Sortieren {
     private int[] liste;
 
-    public Sortieren()
-    {
+    public Sortieren() {
         liste = new int[20];
     }
 
     /*
      * Fuellt das Array mit Zufallszahlen zw. 0 und 100
      */
-    public void fuellen()
-    {
+    public void fuellen() {
         int i;
-        for (i = 0; i < liste.length; i++)
-        {
-             liste[i] = (int)(Math.random() * 100.0);
+        for (i = 0; i < liste.length; i++) {
+            liste[i] = (int) (Math.random() * 100.0);
         }
     }
 
     /*
      * Gibt die Liste auf der Konsole aus
      */
-    void ausgeben()
-    {
+    void ausgeben() {
         int i;
-        for (i = 0; i < liste.length; i++)
-        {
-             System.out.print(liste[i] + " ");
+        for (i = 0; i < liste.length; i++) {
+            System.out.print(liste[i] + " ");
         }
         System.out.println(" ");
     }
@@ -36,28 +30,23 @@ public class Sortieren
     /*
      * Selection Sort (Sortieren durch Auswahl)
      */
-    void selectionSort()
-    {
+    void selectionSort() {
         // hier implementieren
         // ...
     }
-  
 
     /*
      * Bubble Sort (Sortieren durch Vertauschen der Nachbarn)
      */
-    void bubbleSort()
-    {
+    void bubbleSort() {
         // hier implementieren
         // ...
     }
-  
 
     /*
      * Insertion Sort (Sortieren durch Einf�gen)
      */
-    void insertionSort()
-    {
+    void insertionSort() {
         // hier implementieren
         // ...
     }
