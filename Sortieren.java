@@ -52,24 +52,24 @@ public class Sortieren {
 
         int offset = 0;
         while (läuft) {
-            boolean änderung = false;
+            boolean diff = false;
             for (int i = 0; i < arr.length - 1 - offset; i++) {
                 if (arr[i] > arr[i + 1]) {
                     int temp = arr[i];
                     arr[i] = arr[i + 1];
                     arr[i + 1] = temp;
-                    änderung = true;
+                    diff = true;
                 }
             }
             offset++;
-            if (!änderung) {
+            if (!diff) {
                 läuft = false;
             }
         }
     }
 
     /*
-     * Insertion Sort (Sortieren durch Einf�gen)
+     * Insertion Sort (Sortieren durch Einfügen)
      */
     void insertionSort() {
         for (int i = 1; i < arr.length; i++) {
