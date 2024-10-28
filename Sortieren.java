@@ -1,9 +1,9 @@
 
 public class Sortieren {
-    private int[] liste;
+    private int[] arr;
 
     public Sortieren() {
-        liste = new int[20];
+        arr = new int[20];
     }
 
     /*
@@ -11,18 +11,18 @@ public class Sortieren {
      */
     public void fuellen() {
         int i;
-        for (i = 0; i < liste.length; i++) {
-            liste[i] = (int) (Math.random() * 100.0);
+        for (i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * 100.0);
         }
     }
 
     /*
-     * Gibt die Liste auf der Konsole aus
+     * Gibt die arr auf der Konsole aus
      */
     void ausgeben() {
         int i;
-        for (i = 0; i < liste.length; i++) {
-            System.out.print(liste[i] + " ");
+        for (i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println(" ");
     }
