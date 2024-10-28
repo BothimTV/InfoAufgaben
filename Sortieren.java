@@ -42,10 +42,6 @@ public class Sortieren {
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
         }
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
     }
 
     /*
@@ -70,10 +66,6 @@ public class Sortieren {
                 läuft = false;
             }
         }
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
     }
 
     /*
@@ -88,9 +80,6 @@ public class Sortieren {
                 j--;
             }
             arr[j + 1] = key;
-        }
-        for (int i : arr) {
-            System.out.print(i + " ");
         }
     }
 }
