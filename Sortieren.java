@@ -39,8 +39,28 @@ public class Sortieren {
      * Bubble Sort (Sortieren durch Vertauschen der Nachbarn)
      */
     void bubbleSort() {
-        // hier implementieren
-        // ...
+        boolean läuft = true;
+
+        int offset = 0;
+        while (läuft) {
+            boolean änderung = false;
+            for (int i = 0; i < arr.length - 1 - offset; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    änderung = true;
+                }
+            }
+            offset++;
+            if (!änderung) {
+                läuft = false;
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 
     /*
