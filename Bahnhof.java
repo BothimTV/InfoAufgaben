@@ -2,14 +2,20 @@ public class Bahnhof {
     private StackString gleis1;
     private StackString gleis2;
     private StackString gleis3;
+    private StackString gleis4;
 
     public Bahnhof() {
         gleis1 = new StackString();
         gleis2 = new StackString();
         gleis3 = new StackString();
+        gleis4 = new StackString();
     }
 
     public void fuellen(String farbe) {
+        if (!farbe.equals("rot") && !farbe.equals("blau") && !farbe.equals("gruen")) {
+            System.out.println("Fehler: Der Waggon hat eine ungültige Farbe.");
+            return;
+        }
         gleis1.push(farbe);
     }
 
@@ -26,6 +32,10 @@ public class Bahnhof {
             // Wenn der Waggon blau ist, wird er auf Gleis 3 geschoben.
             if (temp.equals("blau")) {
                 gleis3.push(temp);
+            }
+            // Wenn der Waggon gruen ist, wird er auf Gleis 4 geschoben.
+            if (temp.equals("gruen")) {
+                gleis4.push(temp);
             }
         } // Ende der while-Schleife
     }
@@ -69,6 +79,18 @@ public class Bahnhof {
         }
         while (!temp3.isEmpty()) {
             gleis3.push(temp3.pop());
+        }
+
+        // Gleis 4 ausgeben (analog zu Gleis 1, 2 und 3)
+        System.out.println("Gleis 4: ");
+        StackString temp4 = new StackString();
+        while (!gleis4.isEmpty()) {
+            String waggon = gleis4.pop();
+            System.out.println(waggon);
+            temp4.push(waggon);
+        }
+        while (!temp4.isEmpty()) {
+            gleis4.push(temp4.pop());
         }
 
         System.out.println(" "); // Leerzeile zur besseren Lesbarkeit

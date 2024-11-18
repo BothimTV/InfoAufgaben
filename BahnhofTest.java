@@ -44,26 +44,39 @@ public class BahnhofTest {
         System.out.println(
                 "\nTest 6: Erstellen eines neuen Bahnhofs und Befüllen mit einer anderen Reihenfolge von Waggons");
         Bahnhof bahnhof2 = new Bahnhof();
-        // TODO: Befülle bahnhof2 mit Waggons in einer anderen Reihenfolge.
+        bahnhof2.fuellen("blau");
+        bahnhof2.fuellen("rot");
+        bahnhof2.fuellen("blau");
+        bahnhof2.fuellen("rot");
+        bahnhof2.fuellen("rot");
+        System.out.println("Gleis 1 befüllt mit: blau, rot, blau, rot, rot");
 
         // Ausgabe der Gleise vor dem Sortieren (bahnhof2)
         System.out.println("Ausgabe der Gleise vor dem Sortieren (bahnhof2)");
         bahnhof2.gleiseAusgeben();
         // Erwartete Ausgabe: (abhängig von der gewählten Reihenfolge)
+        // Gleis 1: rot, blau, rot, blau, blau
+        // Gleis 2:
+        // Gleis 3:
 
         // Sortieren und Ausgabe der Gleise (bahnhof2)
         System.out.println("Sortieren und Ausgabe der Gleise (bahnhof2)");
         bahnhof2.sortieren();
         bahnhof2.gleiseAusgeben();
         // Erwartete Ausgabe: (abhängig von der gewählten Reihenfolge)
+        // Gleis 1:
+        // Gleis 2: rot, rot, rot
+        // Gleis 3: blau, blau
 
         // Test 7: Testen mit einem leeren Bahnhof
         System.out.println("\nTest 7: Testen mit einem leeren Bahnhof");
         Bahnhof bahnhof3 = new Bahnhof();
-        // TODO: Rufe die Methode sortieren() auf und gib die Gleise aus. Was passiert?
         System.out.println("Sortieren und Ausgabe der Gleise (bahnhof3)");
         bahnhof3.sortieren();
         bahnhof3.gleiseAusgeben();
         // Erwartete Ausgabe:
+        // Gleis 1:
+        // Gleis 2:
+        // Gleis 3:
     }
 }
