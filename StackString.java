@@ -1,54 +1,46 @@
-public class StackString{
+public class StackString {
   private String[] s;
- 
-  public StackString()
-  {
+
+  public StackString() {
     s = new String[0];
-  }                  
-  
-  public boolean isEmpty()
-  {
+  }
+
+  public boolean isEmpty() {
     if (s.length == 0) {
       return true;
-    }
-    else {
+    } else {
       return false;
     } // end of if-else
   }
 
-  
-  public String top(){
+  public String top() {
     if (!isEmpty()) {
       return s[0];
-    } 
-    else {
+    } else {
       return null;
     } // end of if-else
   }
-    
-    
-    
-  public void push(String inhalt){
-    String[] hilf = new String[s.length +1];
+
+  public void push(String inhalt) {
+    String[] hilf = new String[s.length + 1];
     for (int i = 0; i < s.length; i++) {
-      hilf[i+1] = s[i];
+      hilf[i + 1] = s[i];
     }
     hilf[0] = inhalt;
     s = hilf;
   }
-      
-      
-  public String pop(){
-    if(!isEmpty()){
+
+  public String pop() {
+    if (!isEmpty()) {
       String element = s[0];
-      String[] hilf = new String[s.length -1];
+      String[] hilf = new String[s.length - 1];
       for (int i = 0; i < hilf.length; i++) {
-        hilf[i] = s[i+1];
+        hilf[i] = s[i + 1];
       }
       s = hilf;
       return element;
     }
     return null;
   }
-      
-} 
+
+}

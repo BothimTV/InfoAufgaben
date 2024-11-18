@@ -19,9 +19,9 @@ public class BahnhofTest {
         // Test 3: Ausgabe der Gleise vor dem Sortieren
         System.out.println("\nTest 3: Ausgabe der Gleise vor dem Sortieren");
         bahnhof.gleiseAusgeben();
-        // Erwartete Ausgabe: 
+        // Erwartete Ausgabe:
         // Gleis 1: blau, rot, rot, blau, rot
-        // Gleis 2: 
+        // Gleis 2:
         // Gleis 3:
 
         // Test 4: Sortieren der Waggons
@@ -31,7 +31,7 @@ public class BahnhofTest {
 
         // Test 5: Ausgabe der Gleise nach dem Sortieren
         System.out.println("\nTest 5: Ausgabe der Gleise nach dem Sortieren");
-        bahnhof.gleiseAusgeben(); 
+        bahnhof.gleiseAusgeben();
         // Erwartete Ausgabe:
         // Gleis 1:
         // Gleis 2: rot, rot, rot
@@ -39,23 +39,24 @@ public class BahnhofTest {
 
         // --- Testfälle zum Ausfüllen ---
 
-        // Test 6: Erstellen eines neuen Bahnhofs und Befüllen mit einer anderen Reihenfolge von Waggons
-        System.out.println("\nTest 6: Erstellen eines neuen Bahnhofs und Befüllen mit einer anderen Reihenfolge von Waggons");
-        Bahnhof bahnhof2 = new Bahnhof(); 
+        // Test 6: Erstellen eines neuen Bahnhofs und Befüllen mit einer anderen
+        // Reihenfolge von Waggons
+        System.out.println(
+                "\nTest 6: Erstellen eines neuen Bahnhofs und Befüllen mit einer anderen Reihenfolge von Waggons");
+        Bahnhof bahnhof2 = new Bahnhof();
         // TODO: Befülle bahnhof2 mit Waggons in einer anderen Reihenfolge.
-        
+
         // Ausgabe der Gleise vor dem Sortieren (bahnhof2)
         System.out.println("Ausgabe der Gleise vor dem Sortieren (bahnhof2)");
-        bahnhof2.gleiseAusgeben(); 
+        bahnhof2.gleiseAusgeben();
         // Erwartete Ausgabe: (abhängig von der gewählten Reihenfolge)
-        
+
         // Sortieren und Ausgabe der Gleise (bahnhof2)
         System.out.println("Sortieren und Ausgabe der Gleise (bahnhof2)");
         bahnhof2.sortieren();
         bahnhof2.gleiseAusgeben();
         // Erwartete Ausgabe: (abhängig von der gewählten Reihenfolge)
-        
-        
+
         // Test 7: Testen mit einem leeren Bahnhof
         System.out.println("\nTest 7: Testen mit einem leeren Bahnhof");
         Bahnhof bahnhof3 = new Bahnhof();
