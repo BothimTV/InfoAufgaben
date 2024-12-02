@@ -10,7 +10,7 @@ public class Wartezimmer {
      */
     public void einfuegen(Patient pPat) {
         // Diese Methode implementieren.
-
+        q.enqueue(pPat);
     }
 
     /*
@@ -18,6 +18,7 @@ public class Wartezimmer {
      */
     public Patient naechsterPatient() {
         // Diese Methode implementieren
+        return q.dequeue();
     }
 
     /*
@@ -25,6 +26,9 @@ public class Wartezimmer {
      */
     public void alleLoeschen() {
         // Diese Methode implementieren
+        while (!q.isEmpty()) {
+            q.dequeue();
+        } // end of while
     }
 
     /*
