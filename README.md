@@ -14,9 +14,9 @@ Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findes
 - [Selectionsort - 28.10.24](https://github.com/BothimTV/InfoAufgaben/pull/3/files#diff-de442cad8b9dfae4c9f808d7b8a3d496fd841af8ab0276ad374174797ef11aaa)
 
 ## Projekte:
-[LooksMin - 09.09.24](https://github.com/BothimTV/LooksMin)
-[Rangierbahnhof - 18.11.24](https://github.com/BothimTV/InfoAufgaben/tree/bahnhof)
-[Wartezimmer - 02.12.24](https://github.com/BothimTV/InfoAufgaben/tree/wartezimmer)
+[LooksMin - 09.09.24](https://github.com/BothimTV/LooksMin)  
+[Rangierbahnhof - 18.11.24](https://github.com/BothimTV/InfoAufgaben/tree/bahnhof)  
+[Wartezimmer - 02.12.24](https://github.com/BothimTV/InfoAufgaben/tree/wartezimmer)  
 
 # Licence
 This work is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
