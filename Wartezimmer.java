@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Wartezimmer {
     private Queue q;
 
@@ -104,5 +106,33 @@ public class Wartezimmer {
         } // end of while
           // Rückgabe, ob der Patient gefunden wurde
         return gefunden;
+    }
+
+    /*
+     * Berechnet die ungefähre Wartezeit für einen Patienten basierend auf seinem
+     * Namen.
+     * Falls der Patient nicht gefunden wird, wird -1 zurückgegeben.
+     */
+    public Date berechneWartezeit(String pName) {
+        int wartezeit = 0;
+        boolean gefunden = false;
+        Queue hilf = new Queue();
+        Date inTime = new Date();
+        while (!q.isEmpty()) {
+            Patient p = q.dequeue();
+            hilf.enqueue(p);
+            if (p.getName().equals(pName)) {
+                gefunden = true;
+                inTime = p.getAnkunftszeit();
+            }
+            if (gefunden) {
+                wartezeit += 30;
+            }
+        }
+        inTime.setTime(inTime.getTime() + wartezeit * 60000);
+        while (!hilf.isEmpty()) {
+            q.enqueue(hilf.dequeue());
+        }
+        return gefunden ? inTime : null;
     }
 }

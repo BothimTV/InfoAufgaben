@@ -36,6 +36,9 @@ public class WartezimmerUI {
     wz.einfuegen(p4);
     wz.einfuegen(p5);
 
+    System.out.println(p5.getAnkunftszeit() + " " + wz.berechneWartezeit(p5.getName()));
+    System.out.println(p1.getAnkunftszeit() + " " + wz.berechneWartezeit(p1.getName()));
+
     System.out.println(wz.naechsterPatient().getName());
     System.out.println(wz.naechsterPatient().getName());
     System.out.println(wz.naechsterPatient().getName());
