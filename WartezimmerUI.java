@@ -3,11 +3,11 @@ public class WartezimmerUI {
   public static void main(String[] args) {
     Wartezimmer wz = new Wartezimmer();
 
-    Patient p1 = new Patient("Max Mustermann", "AOK");
-    Patient p2 = new Patient("Sabine Musterfrau", "BKK");
-    Patient p3 = new Patient("Peter Peters", "Allianz");
-    Patient p4 = new Patient("Lisa Lustig", "AOK");
-    Patient p5 = new Patient("Menko Mansen", "DEBEKA");
+    Patient p1 = new Patient("Max Mustermann", "AOK", 0);
+    Patient p2 = new Patient("Sabine Musterfrau", "BKK", 5);
+    Patient p3 = new Patient("Peter Peters", "Allianz", 3);
+    Patient p4 = new Patient("Lisa Lustig", "AOK", 8);
+    Patient p5 = new Patient("Menko Mansen", "DEBEKA", 10);
 
     // Patient p1 kommt ins Wartezimmer
     wz.einfuegen(p1);
@@ -23,18 +23,24 @@ public class WartezimmerUI {
 
     // Patient p2 hat einen Termin und geht vorzeitig, danach wird die Anzahl der
     // Patienten im Wartezimmer ausgegeben
-    System.out.println(wz.loeschen("Sabine Musterfrau"));
-    System.out.println(wz.anzahl());
+    // System.out.println(wz.loeschen("Sabine Musterfrau"));
+    // System.out.println(wz.anzahl());
 
     // Der erste Patient kann ins Behandlungszimmer
-    System.out.println(wz.naechsterPatient().getName());
+    // System.out.println(wz.naechsterPatient().getName());
 
     // Der zweite Patient kann ins Behandlungszimmer
-    System.out.println(wz.naechsterPatient().getName());
+    // System.out.println(wz.naechsterPatient().getName());
 
     // Patienten p4 und p5 kommen ins Wartezimmer
     wz.einfuegen(p4);
     wz.einfuegen(p5);
+
+    System.out.println(wz.naechsterPatient().getName());
+    System.out.println(wz.naechsterPatient().getName());
+    System.out.println(wz.naechsterPatient().getName());
+    System.out.println(wz.naechsterPatient().getName());
+    System.out.println(wz.naechsterPatient().getName());
 
   }
 }

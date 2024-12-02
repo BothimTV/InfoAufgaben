@@ -18,7 +18,24 @@ public class Wartezimmer {
      */
     public Patient naechsterPatient() {
         // Diese Methode implementieren
-        return q.dequeue();
+        Queue hilf = new Queue();
+        Patient maxPrio = new Patient(null, null, -1);
+
+        while (!q.isEmpty()) {
+            Patient p = q.dequeue();
+            if (p.getPriorität() > maxPrio.getPriorität()) {
+                if (maxPrio.getPriorität() != -1) {
+                    hilf.enqueue(maxPrio);
+                }
+                maxPrio = p;
+            } else {
+                hilf.enqueue(p);
+            }
+        }
+        while (!hilf.isEmpty()) {
+            q.enqueue(hilf.dequeue());
+        }
+        return maxPrio;
     }
 
     /*
