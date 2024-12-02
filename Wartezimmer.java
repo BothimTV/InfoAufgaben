@@ -35,15 +35,21 @@ public class Wartezimmer {
      * Gibt die Anzahl der in der Queue wartenden Patienten zurueck.
      */
     public int anzahl() {
+        // Variable n deklarieren und initialisieren
         int n = 0;
+        // Hilfs-Queue erstellen
         Queue hilf = new Queue();
+        // Alle Patienten aus der Warteschlange in die Hilfs-Queue einfügen und dabei
+        // die Anzahl der Patienten zählen
         while (!q.isEmpty()) {
             hilf.enqueue(q.dequeue());
             n++;
-        } // end of while
+        }
+        // Alle Patienten wieder in die Warteschlange übertragen
         while (!hilf.isEmpty()) {
             q.enqueue(hilf.dequeue());
-        } // end of while
+        }
+        // Rückgabe der Anzahl der Patienten
         return n;
     }
 
@@ -54,22 +60,32 @@ public class Wartezimmer {
      * sonst false.
      */
     public boolean loeschen(String pName) {
+        // Hilfs-Queue erstellen
         Queue hilf = new Queue();
+        // boolean gefunden initialisieren, um später zu überprüfen, ob der Patient
+        // gefunden wurde
         boolean gefunden = false;
+        // Hilfs-Objekt deklarieren
         Patient pHilf;
         while (!q.isEmpty()) {
+            // Patient aus der Warteschlange entfernen
             pHilf = q.dequeue();
 
+            // Überprüfen, ob der Patient gefunden wurde
             if (!pHilf.getName().equals(pName)) {
+                // Falls nicht, wird der Patient in die Hilfs-Queue eingefügt
                 hilf.enqueue(pHilf);
-            } // end of if
-            else {
+            } else {
+                // Falls der Patient gefunden wurde, wird die Variable gefunden auf true
+                // gesetzt, der Patient wird nicht in die Hilfs-Queue eingefügt
                 gefunden = true;
             } // end of if-else
         } // end of while
         while (!hilf.isEmpty()) {
+            // Alle Patienten aus der Hilfs-Queue wieder in die Warteschlange ein
             q.enqueue(hilf.dequeue());
         } // end of while
+          // Rückgabe, ob der Patient gefunden wurde
         return gefunden;
     }
 }
