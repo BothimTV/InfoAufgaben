@@ -11,7 +11,9 @@ Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findes
 [Sortier Aufgaben](https://github.com/BothimTV/InfoAufgaben/tree/sortierungen):
 - [BubbleSort - 22.10.24](https://github.com/BothimTV/InfoAufgaben/pull/1/files#diff-30b5a41c1a972ba520fbd5eeb91d934dc969a13bcd328ca85e974a7a6eb1be69)
 - [InsertionSort - 28.10.24](https://github.com/BothimTV/InfoAufgaben/pull/2/files#diff-d5cac0af5030e6790c52c07b679f74535ebfca284ebb4eeda2d61e80eeef61b0)
-- [Selectionsort - 28.10.24](https://github.com/BothimTV/InfoAufgaben/pull/3/files#diff-de442cad8b9dfae4c9f808d7b8a3d496fd841af8ab0276ad374174797ef11aaa)
+- [Selectionsort - 28.10.24](https://github.com/BothimTV/InfoAufgaben/pull/3/files#diff-de442cad8b9dfae4c9f808d7b8a3d496fd841af8ab0276ad374174797ef11aaa)  
+
+[Stack Sortieren - 04.12.24](https://github.com/BothimTV/InfoAufgaben/blob/stack-sortieren/StackSortieren.java)
 
 ## Projekte:
 [LooksMin - 09.09.24](https://github.com/BothimTV/LooksMin)  
