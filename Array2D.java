@@ -37,7 +37,6 @@ public class Array2D {
   }
 
   public static int maximum(int[][] array) {
-    // TODO Implementiere eine Methode, die das Maximum eines 2D-Arrays zurückgibt
     // 2.2
     int max = 0;
     for (int i = 0; i < array.length; i++) {
