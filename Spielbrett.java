@@ -15,7 +15,7 @@ public class Spielbrett {
         return false;
     }
 
-    public void checkGewinner(Spieler spieler1, Spieler spieler2) {
+    private void checkGewinner(Spieler spieler1, Spieler spieler2) {
         String gewinner = "";
         for (int i = 0; i < feld.length; i++) {
             if (checkZeile(i)) {
@@ -40,6 +40,11 @@ public class Spielbrett {
         } else if (gewinner.equals("O")) {
             System.out.println(spieler2.name + " hat gewonnen");
         }
+        if (!gewonnen && feldVoll()) {
+            System.out.println("Unentschieden");
+            ausgeben();
+            gewonnen = true;
+        }
     }
 
     private boolean checkZeile(int zeile) {
@@ -54,6 +59,17 @@ public class Spielbrett {
     private boolean checkDiagonal() {
         return feld[0][0] != null && feld[0][0].equals(feld[1][1]) && feld[0][0].equals(feld[2][2]) ||
                 feld[0][2] != null && feld[0][2].equals(feld[1][1]) && feld[0][2].equals(feld[2][0]);
+    }
+
+    private boolean feldVoll() {
+        for (int i = 0; i < feld.length; i++) {
+            for (int j = 0; j < feld[i].length; j++) {
+                if (feld[i][j] == null) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     public void ausgeben() {
