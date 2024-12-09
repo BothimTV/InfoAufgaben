@@ -15,10 +15,14 @@ Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findes
 
 [Stack Sortieren - 04.12.24](https://github.com/BothimTV/InfoAufgaben/blob/stack-sortieren/StackSortieren.java)
 
+## 2D Arrays  
+[Einführung - 09.12.24](https://github.com/BothimTV/InfoAufgaben/blob/2d-arrays/Array2D.java)  
+
 ## Projekte:
 [LooksMin - 09.09.24](https://github.com/BothimTV/LooksMin)  
 [Rangierbahnhof - 18.11.24](https://github.com/BothimTV/InfoAufgaben/tree/bahnhof)  
 [Wartezimmer - 02.12.24](https://github.com/BothimTV/InfoAufgaben/tree/wartezimmer)  
+[TikTakToe - 09.12.24](https://github.com/BothimTV/InfoAufgaben/tree/tiktaktoe)  
 
 # Licence
 This work is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 
