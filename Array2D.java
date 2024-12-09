@@ -12,8 +12,18 @@ public class Array2D {
     testArray[2][0] = 10;
     ausgeben(testArray);
 
+    // Aufgabe 2
+    // 2.1
+    /*
+     * Die Methode summe soll die Summe aller Elemente des 2D-Arrays zurückgeben.
+     * Dabei geht sie für jede Zeile jedes Element durch und addiert es zur Summe.
+     * Dafür benötigt man eine äußerer Schleife, die die Zeilen durchgeht und eine
+     * innere Schleife, die die Elemente der Zeile durchgeht.
+     */
+    // 2.2
+    System.out.println("Maximum: " + maximum(testArray));
+
     // System.out.println("Summe: " + summe(testArray));
-    // System.out.println("Maximum: " + maximum(testArray));
   }
 
   public static int summe(int[][] array) {
@@ -28,7 +38,15 @@ public class Array2D {
 
   public static int maximum(int[][] array) {
     // TODO Implementiere eine Methode, die das Maximum eines 2D-Arrays zurückgibt
+    // 2.2
     int max = 0;
+    for (int i = 0; i < array.length; i++) {
+      for (int j = 0; j < array[i].length; j++) {
+        if (array[i][j] > max) {
+          max = array[i][j];
+        }
+      }
+    }
     return max;
   }
 
