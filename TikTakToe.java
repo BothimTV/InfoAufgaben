@@ -13,7 +13,8 @@ public class TikTakToe {
     }
 
     public void start() {
-        System.out.println("TikTakToe gestartet");
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
 
         System.out.println("Spieler 1, bitte Namen eingeben:");
         spieler1 = new Spieler(scanner.nextLine());
