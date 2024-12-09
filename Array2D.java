@@ -2,6 +2,7 @@ public class Array2D {
 
   public static void main(String[] args) {
     int[][] testArray = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+    int[][] testArraySymmetrisch = { { 1, 2, 4 }, { 2, 4, 6 }, { 4, 6, 8 } };
     ausgeben(testArray);
 
     // Aufgabe 1
@@ -22,6 +23,10 @@ public class Array2D {
      */
     // 2.2
     System.out.println("Maximum: " + maximum(testArray));
+
+    // 2.3 (Zusatz)
+    ausgeben(testArraySymmetrisch);
+    System.out.println("Symmetrisch: " + symmetrisch(testArraySymmetrisch));
 
     // System.out.println("Summe: " + summe(testArray));
   }
@@ -56,6 +61,17 @@ public class Array2D {
       }
       System.out.println();
     }
+  }
+
+  public static boolean symmetrisch(int[][] array) {
+    for (int i = 0; i < array.length; i++) {
+      for (int j = 0; j < array[i].length; j++) {
+        if (array[i][j] != array[j][i]) {
+          return false;
+        }
+      }
+    }
+    return true;
   }
 
 }
