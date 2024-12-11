@@ -19,6 +19,11 @@ public class Array2DChallengeReloaded {
         printArray(zeilensummen(testArray));
         System.out.println();
         System.out.println(spaltensumme(testArray, 1));
+        try {
+            System.out.println(zeileEnthalten(testArray, new int[] { 4, 5, 6 }));
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     // Aufgabe 1.1
@@ -78,8 +83,25 @@ public class Array2DChallengeReloaded {
 
     // Aufgabe 3.1
     public static boolean zeileEnthalten(int[][] array, int[] zeile) {
-        // Code hier ergänzen
-        return false;
+        boolean enthalten = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].length != zeile.length) {
+                throw new IllegalArgumentException("Die Zeilenlängen stimmen nicht überein.");
+            } else {
+                for (int j = 0; j < array[i].length; j++) {
+                    if (array[i][j] == zeile[j]) {
+                        enthalten = true;
+                    } else {
+                        enthalten = false;
+                        break;
+                    }
+                }
+                if (enthalten) {
+                    break;
+                }
+            }
+        }
+        return enthalten;
     }
 
     // Aufgabe 3.2 (Zusatz)
