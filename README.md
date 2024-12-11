@@ -17,6 +17,7 @@ Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findes
 
 ## 2D Arrays  
 [Einführung - 09.12.24](https://github.com/BothimTV/InfoAufgaben/blob/2d-arrays/Array2D.java)  
+[Coding Challenge - 11.12.24](https://github.com/BothimTV/InfoAufgaben/blob/2d-arrays-challenge/Array2DChallengeReloaded.java)  
 
 ## Projekte:
 [LooksMin - 09.09.24](https://github.com/BothimTV/LooksMin)  
