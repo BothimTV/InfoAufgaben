@@ -24,6 +24,7 @@ public class Array2DChallengeReloaded {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
+        ausgeben(multipliziere(testArray, 69));
     }
 
     // Aufgabe 1.1
@@ -106,7 +107,12 @@ public class Array2DChallengeReloaded {
 
     // Aufgabe 3.2 (Zusatz)
     public static int[][] multipliziere(int[][] array, int faktor) {
-        // Code hier ergänzen
-        return null;
+        int[][] newArray = new int[array.length][array[0].length];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                newArray[i][j] = array[i][j] * faktor;
+            }
+        }
+        return newArray;
     }
 }
