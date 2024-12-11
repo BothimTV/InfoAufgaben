@@ -17,6 +17,8 @@ public class Array2DChallengeReloaded {
         ausgeben(testArray);
         System.out.println(zaehleUngerade(testArray));
         printArray(zeilensummen(testArray));
+        System.out.println();
+        System.out.println(spaltensumme(testArray, 1));
     }
 
     // Aufgabe 1.1
@@ -67,7 +69,11 @@ public class Array2DChallengeReloaded {
     // Aufgabe 2.2
     public static int spaltensumme(int[][] array, int spalte) {
         // Code hier ergänzen
-        return 0;
+        int summe = 0;
+        for (int i = 0; i < array.length; i++) {
+            summe += array[i][spalte];
+        }
+        return summe;
     }
 
     // Aufgabe 3.1
