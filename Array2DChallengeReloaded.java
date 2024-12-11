@@ -16,6 +16,7 @@ public class Array2DChallengeReloaded {
 
         ausgeben(testArray);
         System.out.println(zaehleUngerade(testArray));
+        printArray(zeilensummen(testArray));
     }
 
     // Aufgabe 1.1
@@ -46,7 +47,21 @@ public class Array2DChallengeReloaded {
     // Aufgabe 2.1
     public static int[] zeilensummen(int[][] array) {
         // Code hier ergänzen
-        return null;
+        int[] summen = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            int summe = 0;
+            for (int j = 0; j < array[i].length; j++) {
+                summe += array[i][j];
+            }
+            summen[i] = summe;
+        }
+        return summen;
+    }
+
+    public static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
 
     // Aufgabe 2.2
