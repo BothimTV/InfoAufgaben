@@ -15,6 +15,7 @@ public class Array2DChallengeReloaded {
         // int[][] testArray2 = {{1,2,3},{4,5,6},{7,8,9},{7,8,9}};
 
         ausgeben(testArray);
+        System.out.println(zaehleUngerade(testArray));
     }
 
     // Aufgabe 1.1
@@ -31,7 +32,15 @@ public class Array2DChallengeReloaded {
     // Aufgabe 1.2
     public static int zaehleUngerade(int[][] array) {
         // Code hier ergänzen
-        return 0;
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (array[i][j] % 2 != 0) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 
     // Aufgabe 2.1
