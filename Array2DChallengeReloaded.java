@@ -20,6 +20,12 @@ public class Array2DChallengeReloaded {
     // Aufgabe 1.1
     public static void ausgeben(int[][] array) {
         // Alle Elemente ausgeben
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     // Aufgabe 1.2
