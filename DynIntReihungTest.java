@@ -28,7 +28,15 @@ public class DynIntReihungTest {
     }
 
     // Sortierte Reihung ausgeben
-    System.out.println(" ");
+    System.out.println("Sortiert ");
+
+    for (int i = 0; i < reihung.getLength(); i++) {
+      System.out.println(reihung.getItem(i));
+    }
+
+    reihung.reverse();
+    // Sortierte Reihung ausgeben
+    System.out.println("Reversed ");
 
     for (int i = 0; i < reihung.getLength(); i++) {
       System.out.println(reihung.getItem(i));

@@ -106,6 +106,16 @@ public class DynIntReihung {
         return null; // Fehlerfall: Index ungültig
     }
 
+    public void reverse() {
+        DynIntReihung temp = new DynIntReihung();
+        for (int i = 0; i < length; i++) {
+            temp.insertAt(0, getItem(i));
+        }
+        for (int i = 0; i < length; i++) {
+            setItem(i, temp.getItem(i));
+        }
+    }
+
     // Klasse Element zur internen Verwaltung der einzelnen Elemente der dynamischen
     // Reihung
     private class Element {
