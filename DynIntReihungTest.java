@@ -17,6 +17,15 @@ public class DynIntReihungTest {
     }
 
     // hier Bubblesort implementieren
+    for (int i = 0; i < reihung.getLength(); i++) {
+      for (int j = 0; j < reihung.getLength() - i - 1; j++) {
+        if (reihung.getItem(j) > reihung.getItem(j + 1)) {
+          int temp = reihung.getItem(j);
+          reihung.setItem(j, reihung.getItem(j + 1));
+          reihung.setItem(j + 1, temp);
+        }
+      }
+    }
 
     // Sortierte Reihung ausgeben
     System.out.println(" ");
