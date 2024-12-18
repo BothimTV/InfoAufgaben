@@ -40,6 +40,11 @@ public class DatenstrukturenLoesungen {
         System.out.println("\nStack - Aufgaben");
         Stack stack = new Stack();
 
+        stack.push("Apfel");
+        stack.push("Banane");
+        stack.push("Kirsche");
+        System.out.println("Top: " + stack.top());
+
         // Queue - Aufgaben
         System.out.println("\nQueue - Aufgaben");
         Queue queue = new Queue();

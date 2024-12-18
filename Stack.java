@@ -1,8 +1,8 @@
 public class Stack {
-  private int[] s;
+  private String[] s;
 
   public Stack() {
-    s = new int[0];
+    s = new String[0];
   }
 
   public boolean isEmpty() {
@@ -13,16 +13,16 @@ public class Stack {
     } // end of if-else
   }
 
-  public int top() {
+  public String top() {
     if (!isEmpty()) {
       return s[0];
     } else {
-      return 0;
+      return null;
     } // end of if-else
   }
 
-  public void push(int inhalt) {
-    int[] hilf = new int[s.length + 1];
+  public void push(String inhalt) {
+    String[] hilf = new String[s.length + 1];
     for (int i = 0; i < s.length; i++) {
       hilf[i + 1] = s[i];
     }
@@ -30,17 +30,17 @@ public class Stack {
     s = hilf;
   }
 
-  public int pop() {
+  public String pop() {
     if (!isEmpty()) {
-      int element = s[0];
-      int[] hilf = new int[s.length - 1];
+      String element = s[0];
+      String[] hilf = new String[s.length - 1];
       for (int i = 0; i < hilf.length; i++) {
         hilf[i] = s[i + 1];
       }
       s = hilf;
       return element;
     }
-    return 0;
+    return null;
   }
 
 }
