@@ -1,5 +1,7 @@
 public class DatenstrukturenLoesungen {
 
+    private static Stack stack = new Stack();
+
     public static void main(String[] args) {
         // Dynamisches Array - Aufgaben
         System.out.println("Dynamisches Array - Aufgaben");
@@ -38,7 +40,6 @@ public class DatenstrukturenLoesungen {
 
         // Stack - Aufgaben
         System.out.println("\nStack - Aufgaben");
-        Stack stack = new Stack();
 
         stack.push("Apfel");
         stack.push("Banane");
@@ -49,9 +50,34 @@ public class DatenstrukturenLoesungen {
         stack.push("Orange");
         System.out.println("Stack leer? " + stack.isEmpty());
 
+        System.out.println(" - Aufgabe (Vorher) - ");
+        stackAusgeben();
+        System.out.println(" - Aufgabe (Reversed) - ");
+        stack.reverse();
+        stackAusgeben();
+        System.out.println(" - Aufgabe (Absteigend) - ");
+        stack.sort(false);
+        stackAusgeben();
+        System.out.println(" - Aufgabe (Aufsteigend) - ");
+        stack.sort(true);
+        stackAusgeben();
+
         // Queue - Aufgaben
         System.out.println("\nQueue - Aufgaben");
         Queue queue = new Queue();
 
+    }
+
+    private static void stackAusgeben() {
+        Stack hilf = new Stack();
+        while (!stack.isEmpty()) {
+            String element = stack.pop();
+            System.out.println(element);
+            hilf.push(element);
+        }
+        hilf.reverse();
+        while (!hilf.isEmpty()) {
+            stack.push(hilf.pop());
+        }
     }
 }
