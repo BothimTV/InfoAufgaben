@@ -20,6 +20,22 @@ public class DatenstrukturenLoesungen {
         }
         System.out.println("Länge: " + dynArray.getLength());
 
+        dynArray.delete(2);
+        System.out.println("Das Element 10 ist im Array an der Position: " + dynArray.findInt(10));
+        System.out.println("Das Element 20 ist im Array an der Position: " + dynArray.findInt(20));
+
+        System.out.println(" -- Sortieren (Absteigend) -- ");
+        dynArray.sort(false);
+        for (int i = 0; i < dynArray.getLength(); i++) {
+            System.out.println("Element an Index " + i + ": " + dynArray.getItem(i));
+        }
+
+        System.out.println(" -- Sortieren (Aufsteigend) -- ");
+        dynArray.sort(true);
+        for (int i = 0; i < dynArray.getLength(); i++) {
+            System.out.println("Element an Index " + i + ": " + dynArray.getItem(i));
+        }
+
         // Stack - Aufgaben
         System.out.println("\nStack - Aufgaben");
         Stack stack = new Stack();

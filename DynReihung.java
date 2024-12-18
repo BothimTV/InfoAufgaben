@@ -106,6 +106,35 @@ public class DynReihung {
         return null; // Fehlerfall: Index ungültig
     }
 
+    public int findInt(int value) {
+        for (int i = 0; i < this.getLength(); i++) {
+            if (this.getItem(i) == value) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void sort(boolean aufsteigend) {
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length - 1; j++) {
+                if (aufsteigend) {
+                    if (getItem(j) > getItem(j + 1)) {
+                        int temp = getItem(j);
+                        setItem(j, getItem(j + 1));
+                        setItem(j + 1, temp);
+                    }
+                } else {
+                    if (getItem(j) < getItem(j + 1)) {
+                        int temp = getItem(j);
+                        setItem(j, getItem(j + 1));
+                        setItem(j + 1, temp);
+                    }
+                }
+            }
+        }
+    }
+
     // Klasse Element zur internen Verwaltung der einzelnen Elemente der dynamischen
     // Reihung
     private class Element {
