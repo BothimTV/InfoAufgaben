@@ -45,6 +45,10 @@ public class DatenstrukturenLoesungen {
         stack.push("Kirsche");
         System.out.println("Top: " + stack.top());
 
+        System.out.println("Pop: " + stack.pop());
+        stack.push("Orange");
+        System.out.println("Stack leer? " + stack.isEmpty());
+
         // Queue - Aufgaben
         System.out.println("\nQueue - Aufgaben");
         Queue queue = new Queue();
