@@ -9,6 +9,10 @@ class Graph {
         anzahlKnoten = 0;
     }
 
+    /**
+     * Wenn man versucht mehr Knoten als maxAnzahlKnoten hinzuzufügen, wird eine
+     * Fehlermeldung ausgegeben, der Knoten wird nicht hinzugefügt.
+     */
     public void knotenHinzufuegen(Knoten knoten) {
         if (anzahlKnoten < knotenListe.length) {
             knotenListe[anzahlKnoten] = knoten;
