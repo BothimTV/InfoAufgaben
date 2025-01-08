@@ -16,5 +16,24 @@ public class Main {
         System.out.println("Graph A:");
         System.out.println(graphA); // Ausgabe der Adjazenzmatrix
 
+        Graph graphB = new Graph(5);
+        Knoten bA = new Knoten("A");
+        Knoten bB = new Knoten("B");
+        Knoten bC = new Knoten("C");
+        Knoten bD = new Knoten("D");
+        Knoten bE = new Knoten("E");
+        graphB.knotenHinzufuegen(bA);
+        graphB.knotenHinzufuegen(bB);
+        graphB.knotenHinzufuegen(bC);
+        graphB.knotenHinzufuegen(bD);
+        graphB.knotenHinzufuegen(bE);
+        graphB.kanteHinzufuegen(bA, bC, 1);
+        graphB.kanteHinzufuegen(bA, bB, 2);
+        graphB.kanteHinzufuegen(bC, bB, 5);
+        graphB.kanteHinzufuegen(bB, bD, 3);
+        graphB.kanteHinzufuegen(bD, bE, 4);
+        System.out.println("Graph B:");
+        System.out.println(graphB); // Ausgabe der Adjazenzmatrix
+
     }
 }
