@@ -23,6 +23,10 @@ class Graph {
         int nachIndex = knotenIndexFinden(nach);
 
         if (vonIndex != -1 && nachIndex != -1) {
+            /**
+             * Man setzt das Gewicht in der Adjazenzmatrix an zwei Stellen, da der Graph
+             * ungerichtet und daher gespiegelt ist.
+             */
             adjazenzMatrix[vonIndex][nachIndex] = gewicht;
             adjazenzMatrix[nachIndex][vonIndex] = gewicht;
         } else {
