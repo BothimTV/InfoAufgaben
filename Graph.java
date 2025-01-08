@@ -1,4 +1,4 @@
-  class Graph {
+class Graph {
     private Knoten[] knotenListe;
     private int[][] adjazenzMatrix;
     private int anzahlKnoten;
@@ -24,7 +24,7 @@
 
         if (vonIndex != -1 && nachIndex != -1) {
             adjazenzMatrix[vonIndex][nachIndex] = gewicht;
-            adjazenzMatrix[nachIndex][vonIndex] = gewicht; 
+            adjazenzMatrix[nachIndex][vonIndex] = gewicht;
         } else {
             System.out.println("Knoten nicht gefunden.");
         }
