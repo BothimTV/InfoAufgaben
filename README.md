@@ -1,3 +1,5 @@
+![Aufgabe2a.png](/Aufgabe%202a.png)
+
 # Informatik Aufgaben
 Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findest Du eine Auflistung inkl. Datum aus den Stunden:
 
