@@ -30,6 +30,12 @@ class Graph {
         }
     }
 
+    /**
+     * Hilfsmethode, um den Index eines Knotens in der Knotenliste zu finden.
+     * Dies funktioniert indem man die Liste aller Knoten durchgeht und den Namen
+     * mit dem gesuchten Knoten vergleicht.
+     * Wenn der Name übereinstimmt, wird der Index zurückgegeben, ansonsten -1.
+     */
     private int knotenIndexFinden(Knoten knoten) {
         for (int i = 0; i < anzahlKnoten; i++) {
             if (knotenListe[i].getName().equals(knoten.getName())) {
