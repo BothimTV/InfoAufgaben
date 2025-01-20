@@ -32,5 +32,8 @@ public class Main {
 
         System.out.println("Breitensuche ab Knoten 4:");
         graph1.breitensuche(4);
+
+        System.out.println("Tiefensuche ab Knoten 4:");
+        graph1.starteTiefensuche(4);
     }
 }
