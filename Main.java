@@ -22,7 +22,15 @@ public class Main {
 
         // Weiteren Graphen zum Testen erstellen, unzusammenhängend
         Graph graph1 = new Graph(7);
-        // hier erweitern und testen
+        graph1.fuegeKanteHinzu(new Kante(0, 1));
+        graph1.fuegeKanteHinzu(new Kante(0, 2));
+        graph1.fuegeKanteHinzu(new Kante(0, 6));
+        graph1.fuegeKanteHinzu(new Kante(1, 3));
+        graph1.fuegeKanteHinzu(new Kante(1, 4));
+        graph1.fuegeKanteHinzu(new Kante(2, 4));
+        graph1.fuegeKanteHinzu(new Kante(6, 5));
 
+        System.out.println("Breitensuche ab Knoten 4:");
+        graph1.breitensuche(4);
     }
 }
