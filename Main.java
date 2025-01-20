@@ -35,5 +35,20 @@ public class Main {
 
         System.out.println("Tiefensuche ab Knoten 4:");
         graph1.starteTiefensuche(4);
+
+        Graph graph2 = new Graph(7);
+        graph2.fuegeKanteHinzu(new Kante(0, 1));
+        graph2.fuegeKanteHinzu(new Kante(0, 2));
+        graph2.fuegeKanteHinzu(new Kante(0, 6));
+        graph2.fuegeKanteHinzu(new Kante(1, 3));
+        graph2.fuegeKanteHinzu(new Kante(1, 5));
+        graph2.fuegeKanteHinzu(new Kante(2, 6));
+        graph2.fuegeKanteHinzu(new Kante(2, 4));
+
+        System.out.println("Breitensuche ab Knoten 0:");
+        graph2.breitensuche(0);
+
+        System.out.println("Tiefensuche ab Knoten 0:");
+        graph2.starteTiefensuche(0);
     }
 }
