@@ -17,6 +17,10 @@ public class Main {
 
         System.out.println("Graph 1 Breitensuche:");
         graph1.breitensuche(0);
-        ;
+
+        Graph graph2 = new Graph(7);
+        graph2.fuegeKanteHinzu(new Kante(0, 1));
+        graph2.fuegeKanteHinzu(new Kante(1, 2));
+
     }
 }
