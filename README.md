@@ -2,6 +2,7 @@
 Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findest Du eine Auflistung inkl. Datum aus den Stunden:
 
 ## Grundlagen:
+[Abschluss Datenstrukturen - 29.01.25](https://github.com/BothimTV/InfoAufgaben/tree/abschluss-datenstrukturen)  
 ### Übung & Wiederholung
 [Übungsaufgaben - 26.08.24](https://github.com/BothimTV/InfoAufgaben/blob/test-aufgaben/HelloWorld.java)  
 [Arrays - 16.09.24](https://github.com/BothimTV/InfoAufgaben/tree/arrays)
