@@ -13,14 +13,17 @@ public class StackTest {
 
     stack.push(6);
     stack.push(7);
-
-    System.out.println(stack.pop());
-    System.out.println(stack.pop());
-    System.out.println(stack.pop());
-    System.out.println(stack.pop());
-    System.out.println(stack.pop());
-
     stack.push(8);
     System.out.println(stack.pop());
+
+    Stack hilf = new Stack();
+    while (!stack.isEmpty()) {
+      int element = stack.pop();
+      hilf.push(element);
+      System.out.println(element);
+    }
+    while (!hilf.isEmpty()) {
+      stack.push(hilf.pop());
+    }
   }
 }
