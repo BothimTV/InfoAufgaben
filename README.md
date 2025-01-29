@@ -1,8 +1,7 @@
 # Informatik Aufgaben
 Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findest Du eine Auflistung inkl. Datum aus den Stunden:
 
-## Grundlagen:
-[Abschluss Datenstrukturen - 29.01.25](https://github.com/BothimTV/InfoAufgaben/tree/abschluss-datenstrukturen)  
+## Grundlagen:  
 ### Übung & Wiederholung
 [Übungsaufgaben - 26.08.24](https://github.com/BothimTV/InfoAufgaben/blob/test-aufgaben/HelloWorld.java)  
 [Arrays - 16.09.24](https://github.com/BothimTV/InfoAufgaben/tree/arrays)
@@ -17,6 +16,7 @@ Die Bearbeitung der Informatikaufgaben finden in den Branches statt. Hier findes
 [Stack Sortieren - 04.12.24](https://github.com/BothimTV/InfoAufgaben/blob/stack-sortieren/StackSortieren.java)
 
 ## Datenstrukturen  
+[Abschluss Datenstrukturen - 29.01.25](https://github.com/BothimTV/InfoAufgaben/tree/abschluss-datenstrukturen)  
 ### 2D Arrays  
 [Einführung - 09.12.24](https://github.com/BothimTV/InfoAufgaben/blob/2d-arrays/Array2D.java)  
 [Coding Challenge - 11.12.24](https://github.com/BothimTV/InfoAufgaben/blob/2d-arrays-challenge/Array2DChallengeReloaded.java)  
