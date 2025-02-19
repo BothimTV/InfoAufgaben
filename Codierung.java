@@ -13,8 +13,8 @@ public class Codierung {
     System.out.println("Passworteingabe");
     PasswortKorrekt("geheim123");
 
-    // System.out.println("ZiffernErsetzen:");
-    // ZiffernErsetzen("Hallo 123 Welt");
+    System.out.println("ZiffernErsetzen:");
+    ZiffernErsetzen("Hallo 123 Welt");
 
     // System.out.println("\nAnzahlE:");
     // AnzahlE("Hallo Welt");
@@ -68,6 +68,35 @@ public class Codierung {
 
   public static void ZiffernErsetzen(String eingabe) {
     // Implementierung von Aufgabe 3
+    String ausgabe = "";
+    int laenge = eingabe.length();
+    for (int i = 0; i < laenge; i++) {
+      char zeichen = eingabe.charAt(i);
+      if (zeichen == '0') {
+        ausgabe += "Null";
+      } else if (zeichen == '1') {
+        ausgabe += "Eins";
+      } else if (zeichen == '2') {
+        ausgabe += "Zwei";
+      } else if (zeichen == '3') {
+        ausgabe += "Drei";
+      } else if (zeichen == '4') {
+        ausgabe += "Vier";
+      } else if (zeichen == '5') {
+        ausgabe += "Fünf";
+      } else if (zeichen == '6') {
+        ausgabe += "Sechs";
+      } else if (zeichen == '7') {
+        ausgabe += "Sieben";
+      } else if (zeichen == '8') {
+        ausgabe += "Acht";
+      } else if (zeichen == '9') {
+        ausgabe += "Neun";
+      } else {
+        ausgabe += zeichen;
+      }
+    }
+    System.out.println(ausgabe);
   }
 
   public static void AnzahlE(String eingabe) {
