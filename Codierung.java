@@ -54,6 +54,10 @@ public class Codierung {
 
       if (zeichen == 'ä') {
         ausgabe = ausgabe + "ae";
+      } else if (zeichen == 'ü') {
+        ausgabe = ausgabe + "ue";
+      } else if (zeichen == 'ö') {
+        ausgabe = ausgabe + "oe";
       } else {
         ausgabe = ausgabe + zeichen;
       }
