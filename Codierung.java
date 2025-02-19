@@ -28,6 +28,7 @@ public class Codierung {
     System.out.println(ausgabe);
 
     // Hier Methode erweitern nach Aufgabe 1 a) und b)
+    System.out.println("Erstes Zeichen: " + eingabe.charAt(0) + " Letztes Zeichen: " + eingabe.charAt(laenge - 1));
   }
 
   public static boolean PasswortKorrekt(String eingabe) {
