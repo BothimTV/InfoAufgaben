@@ -1,4 +1,6 @@
 public class Codierung {
+  private final static String CODEWORT = "geheim123";
+
   public static void main(String[] args) {
     // Testen der Methoden:
 
@@ -8,8 +10,8 @@ public class Codierung {
     System.out.println("\nErsetzen:");
     Ersetzen("ä ö ü Hallo");
 
-    // System.out.println("Passworteingabe");
-    // PasswortKorrekt("geheim123");
+    System.out.println("Passworteingabe");
+    PasswortKorrekt("geheim123");
 
     // System.out.println("ZiffernErsetzen:");
     // ZiffernErsetzen("Hallo 123 Welt");
@@ -33,7 +35,13 @@ public class Codierung {
 
   public static boolean PasswortKorrekt(String eingabe) {
     // Implementierung von Aufgabe 1b
-    return false;
+    if (eingabe.equals(CODEWORT)) {
+      System.out.println("Passwort korrekt!");
+      return true;
+    } else {
+      System.out.println("Passwort falsch!");
+      return false;
+    }
   }
 
   public static void Ersetzen(String eingabe) {
