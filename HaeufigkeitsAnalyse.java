@@ -3,9 +3,11 @@ import java.util.Scanner;
 public class HaeufigkeitsAnalyse {
 
     public static void main(String[] args) {
-        String text1 = getText();
-        double[] analyse1 = analyse(text1);
-        decodeCaesar(analyse1, text1);
+        String text = getText();
+        String encoded = encodeCaesar(text, -5);
+        System.out.println(encoded);
+        double[] analyse1 = analyse(encoded);
+        decodeCaesar(analyse1, encoded);
     }
 
     public static String getText() {
@@ -14,6 +16,26 @@ public class HaeufigkeitsAnalyse {
         String text = scanner.nextLine().toUpperCase();
         scanner.close();
         return text;
+    }
+
+    public static String encodeCaesar(String text, int offset) {
+        text = text.toUpperCase();
+        String encoded = "";
+        for (int i = 0; i < text.length(); i++) {
+            int index = text.charAt(i);
+            if (index >= 'A' && index <= 'Z') {
+                index += offset;
+                if (index > 'Z') {
+                    index = index - 26;
+                } else if (index < 'A') {
+                    index = index + 26;
+                }
+                encoded += (char) index;
+            } else {
+                encoded += text.charAt(i);
+            }
+        }
+        return encoded;
     }
 
     public static double[] analyse(String text) {
