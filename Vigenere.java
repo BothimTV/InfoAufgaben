@@ -14,9 +14,9 @@ public class Vigenere {
         text = text.toUpperCase()
                 .replaceAll(" ", "");
         for (int i = 0; i < text.length(); i++) {
-            int verschiebung = key.charAt(i % key.length()) - 'A';
+            int offset = key.charAt(i % key.length()) - 'A';
             int neuAsci = text.charAt(i);
-            char neu = (char) (neuAsci + verschiebung);
+            char neu = (char) (neuAsci + offset);
             if (neu > 'Z') {
                 neu = (char) (neu - 26);
             }
@@ -27,6 +27,7 @@ public class Vigenere {
 
     public static String decodeVigener(String key, String encrypted) {
         String decoded = "";
+        key = key.toUpperCase();
 
         for (int i = 0; i < encrypted.length(); i++) {
             int offset = key.charAt(i % key.length()) - 'A';
